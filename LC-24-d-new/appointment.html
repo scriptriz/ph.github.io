@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgb(231, 255, 247);
+        justify-content: center;
+        min-height: 100vh;
+       /* text-align: center;*/
+    }
+    .input_field {
+        gap: 30px;
+ 
+    }
+    .input_field input {
+        background-color: white;
+        border: none;
+        outline: none;
+       
+        text-align: left;
+        border-radius: 10px;
+        
+    }
+    .row {
+       line-height: 3;
+    }
+    .input_field textarea {
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        width: 18.5%;
+        padding: 10px;
+        height: 15vh;
+    }
+</style>
+<body>
+    <form action="xyz.php">
+        <div class="form_wrapper">
+            <div class="form_container">
+              <div class="title_container">
+                <h2>Responsive Registration Form</h2>
+              </div>
+              <div class="row clearfix">
+                <div class="">
+                  <form>
+                    <div class="row clearfix">
+                        <div class="col_half">
+                          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                            <input type="text" name="name" placeholder="First Name" />
+                          </div>
+                        </div>
+                        <div class="col_half">
+                          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                            <input type="text" name="name" placeholder="Last Name" required />
+                          </div>
+                        </div>
+                      </div>
+                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                      <input type="email" name="email" placeholder="Email" required />
+                    </div>
+                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                      <input type="number" name="phoneNumber" placeholder="Phone number" required />
+                    </div>
+                    <div class="input_field"> 
+                      <textarea id="subject" name="subject" placeholder="Your Message"></textarea>
+                    </div>
+                    
+                          <div class="input_field radio_option">
+                        <input type="radio" name="radiogroup1" id="rd1">
+                        <label for="rd1">Male</label>
+                        <input type="radio" name="radiogroup1" id="rd2">
+                        <label for="rd2">Female</label>
+                        </div>
+                        
+                    <input class="button" type="submit" value="Register" />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+    </form>
+</body>
+</html>
